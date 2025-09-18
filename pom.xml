@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
 
     <name>Todo Java App</name>
-    <description>A Java To-Do application with local file storage</description>
+    <description>A Java To-Do application with local and Firebase storage</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -20,6 +20,13 @@
     </properties>
 
     <dependencies>
+        <!-- Firebase Admin SDK -->
+        <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>9.2.0</version>
+        </dependency>
+
         <!-- JSON Processing -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
